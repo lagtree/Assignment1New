@@ -70,9 +70,9 @@ double calculateDistance()
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
     // Output the results
-    printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2lf; y2 = %.2lf\n", x2, y2);
-    printf("The distance between the two points is %.2lf\n", distance);
+    printf("Point #1 entered: x1 = %.3lf; y1 = %.3lf\n", x1, y1);
+    printf("Point #2 entered: x2 = %.3lf; y2 = %.3lf\n", x2, y2);
+    printf("The distance between the two points is %.3lf\n", distance);
 
     // Return the computed distance
     return distance;
@@ -103,9 +103,9 @@ double calculatePerimeter()
     double perimeter = PI * diameter;
 
     // Output the results
-    printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2lf; y2 = %.2lf\n", x2, y2);
-    printf("The perimeter of the city encompassed by your request is %.2lf\n", perimeter);
+    printf("Point #1 entered: x1 = %.3lf; y1 = %.3lf\n", x1, y1);
+    printf("Point #2 entered: x2 = %.3lf; y2 = %.3lf\n", x2, y2);
+    printf("The perimeter of the city encompassed by your request is %.3lf\n", perimeter);
 
     // Return the difficulty level
     return 2.0;
@@ -140,9 +140,9 @@ double calculateArea()
     double area = PI * pow(radius, 2);
 
     // Output the results
-    printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2lf; y2 = %.2lf\n", x2, y2);
-    printf("The area of the city encompassed by your request is %.2lf\n", area);
+    printf("Point #1 entered: x1 = %.3lf; y1 = %.3lf\n", x1, y1);
+    printf("Point #2 entered: x2 = %.3lf; y2 = %.3lf\n", x2, y2);
+    printf("The area of the city encompassed by your request is %.3lf\n", area);
 
     // Return the difficulty level
     return 2.0;
@@ -169,9 +169,9 @@ double calculateWidth()
     double diameter = helperDiameter(x1, x2, y1, y2);
 
     // Output the results
-    printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2lf; y2 = %.2lf\n", x2, y2);
-    printf("The width of the city encompassed by your request is %.2lf\n", diameter);
+    printf("Point #1 entered: x1 = %.3lf; y1 = %.3lf\n", x1, y1);
+    printf("Point #2 entered: x2 = %.3lf; y2 = %.3lf\n", x2, y2);
+    printf("The width of the city encompassed by your request is %.3lf\n", diameter);
 
     // Return the computed width
     return diameter;
@@ -197,9 +197,9 @@ double calculateHeight()
     double diameter = helperDiameter(x1, x2, y1, y2);
 
     // Output the results
-    printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
-    printf("Point #2 entered: x2 = %.2lf; y2 = %.2lf\n", x2, y2);
-    printf("The height of the city encompassed by your request is %.2lf\n", diameter);
+    printf("Point #1 entered: x1 = %.3lf; y1 = %.3lf\n", x1, y1);
+    printf("Point #2 entered: x2 = %.3lf; y2 = %.3lf\n", x2, y2);
+    printf("The height of the city encompassed by your request is %.3lf\n", diameter);
 
     // Return the computed height
     return diameter;
