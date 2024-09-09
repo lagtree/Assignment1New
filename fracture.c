@@ -25,6 +25,7 @@ double calculatePerimeter();
 double calculateArea();
 double calculateWidth();
 double calculateHeight();
+double helperDiameter();
 
 //********************************************************
 // void main()
@@ -96,7 +97,7 @@ double calculatePerimeter()
     scanf("%lf", &y2);
 
     // Compute the diameter using the distance between the points
-    double diameter = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    double diameter = helperDiameter(x1,x2,y1,y2);
 
     // Compute the circumference (perimeter) of the circle
     double perimeter = PI * diameter;
@@ -173,7 +174,7 @@ double calculateWidth()
     printf("The width of the city encompassed by your request is %.2lf\n", diameter);
 
     // Return the computed width
-    return width;
+    return diameter;
 }
 
 //********************************************************
@@ -201,7 +202,7 @@ double calculateHeight()
     printf("The height of the city encompassed by your request is %.2lf\n", diameter);
 
     // Return the computed height
-    return height;
+    return diameter;
 }
 
 //********************************************************
@@ -212,7 +213,7 @@ double calculateHeight()
 // Called:      Three times.
 //********************************************************
 
-double helperDiameter(double x1,x2,y1,y2) 
+double helperDiameter(double x1, double x2, double y1, double y2) 
 {
     double diameter = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
